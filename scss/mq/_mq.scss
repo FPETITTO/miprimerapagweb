@@ -1,0 +1,39 @@
+@media only screen and (min-width: 600px) {
+    ul {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .index-h1 {
+        font-size: 2rem;
+    }
+
+    .contenedor-flex {
+        flex-direction: column;
+    }
+
+    .header-contenedor-inferior-flex {
+        flex-direction: row;
+    }
+
+}
+
+@media only screen and (min-width: 900px) {
+    .index-h1 {
+        font-size: 4rem;
+    }
+
+    .contenedor-flex {
+        flex-direction: row;
+        gap: 3rem;
+        margin-left: 3rem;
+    }
+
+    .contenedor-inferior-header {
+        max-width: 30rem;
+    }
+
+    .header-contenedor-inferior-flex {
+        flex-direction: row;
+    }
+}

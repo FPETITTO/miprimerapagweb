@@ -1,0 +1,80 @@
+/*Estilos Main */
+
+
+.main-h3 {
+    @include tipografia(1.3rem, 600);
+    color: $ColorRosaMasOscuro;
+    text-align: center;
+}
+
+
+.producto-card {
+    width: 200px;
+    padding: 0.5rem;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.main-h4 {
+    @include tipografia(1.3rem, 600);
+    color: $colorRosaIntermedio;
+    margin-bottom: 0.5rem;
+    margin-top: 0rem;
+    padding: 0.5rem;
+}
+
+
+.main-parrafo {
+    width: 200px;
+}
+
+
+.main-parrafo-promos {
+    width: 200px;
+}
+
+
+.main-parrafo,
+.main-parrafodesc,
+.main-precio,
+.main-precio-oferta,
+.main-parrafo-promos {
+    color: $ColorRosaIntermedioMenos;
+}
+
+
+.main-button {
+    color: $colorBlanco;
+    background-color: $colorRosaButton;
+    @include tipografia(1rem, 500);
+    padding: 0.5rem;
+    border: none;
+    border-radius: 0.5rem;
+    text-transform: uppercase;
+}
+
+
+.main-precio-oferta {
+    text-decoration: line-through;
+    text-decoration-thickness: 2px;
+}
+
+
+.img-labialmate,
+.img-esmaltedeuñas {
+    display: flex;
+    justify-content: center;
+    @extend %tipografiaEstilosimg;
+}
+
+.contenedor-flex-productos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 3rem;
+}
+
+.img-promoespecial {
+    @extend %tipografiaEstilosimg;
+}
