@@ -1,0 +1,78 @@
+/*Estilos Header */
+.index-header {
+    background-image: url(../img/wallpapers-maquillayuñas.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    max-height: 40rem;
+}
+
+
+.logo-container {
+    display: flex;
+    justify-content: center;
+    /* centra horizontal */
+    align-items: center;
+    /* centra vertical (opcional) */
+    height: 180px;
+    /* opcional */
+}
+
+
+.index-h1 {
+    @include tipografia(1rem, 700);
+    color: $colorRosaOscuro;
+    text-align: center;
+}
+
+
+.index-h3 {
+    @include tipografia(3rem, 600);
+    color: #ff7477;
+    display: flex;
+}
+
+
+.index-parrafo {
+    color: #ff7477;
+    font-size: 1.6rem;
+}
+
+
+.header-parrafo {
+    color: #ff1b82;
+    font-size: 1rem;
+}
+
+
+.index-header-btn {
+    background-color: $colorRosaButton;
+    color: $colorBlanco;
+    @include tipografia(1rem, 500);
+    padding: 1rem;
+    text-transform: uppercase;
+    border-radius: 0.5rem;
+}
+
+
+.contenedor-flex {
+    @extend %tipografiaEstilos;
+    gap: 5rem;
+    justify-content: flex-end;
+    /* Alinear a la derecha */
+}
+
+
+.contenedor-inferior-header {
+    width: 50%;
+}
+
+
+.header-contenedor-inferior-flex {
+    @extend %tipografiaEstilos;
+    flex-direction: column;
+    justify-content: center;
+    gap: 3rem;
+}
